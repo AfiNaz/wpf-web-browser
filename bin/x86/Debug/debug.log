@@ -1,0 +1,50 @@
+[0920/164911:ERROR:ipc_channel_win.cc(502)] pipe error: 232
+[0920/165732:ERROR:ipc_channel_win.cc(207)] pipe error: 109
+[1012/021615:ERROR:ipc_channel_win.cc(465)] pipe error: 109
+[1110/192959:WARNING:dns_config_service_win.cc(673)] Failed to read DnsConfig.
+[1110/193004:WARNING:dns_config_service_win.cc(673)] Failed to read DnsConfig.
+[1110/193009:WARNING:dns_config_service_win.cc(673)] Failed to read DnsConfig.
+[1110/193014:WARNING:dns_config_service_win.cc(673)] Failed to read DnsConfig.
+[1110/193019:WARNING:dns_config_service_win.cc(673)] Failed to read DnsConfig.
+[1110/193024:WARNING:dns_config_service_win.cc(673)] Failed to read DnsConfig.
+[1110/193029:WARNING:dns_config_service_win.cc(673)] Failed to read DnsConfig.
+[1110/193034:WARNING:dns_config_service_win.cc(673)] Failed to read DnsConfig.
+[1110/193039:WARNING:dns_config_service_win.cc(673)] Failed to read DnsConfig.
+[1110/193044:WARNING:dns_config_service_win.cc(673)] Failed to read DnsConfig.
+[1110/193049:WARNING:dns_config_service_win.cc(673)] Failed to read DnsConfig.
+[1110/193054:WARNING:dns_config_service_win.cc(673)] Failed to read DnsConfig.
+[1110/193059:WARNING:dns_config_service_win.cc(673)] Failed to read DnsConfig.
+[1110/193104:WARNING:dns_config_service_win.cc(673)] Failed to read DnsConfig.
+[1110/193109:WARNING:dns_config_service_win.cc(673)] Failed to read DnsConfig.
+[1110/193114:WARNING:dns_config_service_win.cc(673)] Failed to read DnsConfig.
+[1111/191305:INFO:CONSOLE(0)] "/deep/ combinator is deprecated. See https://www.chromestatus.com/features/6750456638341120 for more details.", source:  (0)
+[1111/191306:INFO:CONSOLE(288)] "Uncaught (in promise) TypeError: Cannot read property 'getStrings' of undefined", source: chrome-extension://mhjfbmdgcfjbbpaeojofohoefgiehjai/pdf.js (288)
+[1111/191523:ERROR:ipc_channel_win.cc(502)] pipe error: 232
+[1120/170119:ERROR:cache_util_win.cc(20)] Unable to move the cache: 5
+[1120/170119:ERROR:cache_util.cc(132)] Unable to move cache folder C:\Users\User\AppData\Local\WebExpress\user data\Cache to C:\Users\User\AppData\Local\WebExpress\user data\old_Cache_000
+[1120/170119:ERROR:cache_creator.cc(127)] Unable to create cache
+[1120/170131:WARNING:extension_protocols.cc(426)] Failed to GetPathForExtension: boadgeojelhgndaghljhdicfkmllpafd
+[1120/170131:WARNING:url_request_job_manager.cc(89)] Failed to map: chrome-extension://boadgeojelhgndaghljhdicfkmllpafd/cast_sender.js
+[1120/170131:WARNING:extension_protocols.cc(426)] Failed to GetPathForExtension: dliochdbjfkdbacpmhlcpmleaejidimm
+[1120/170131:WARNING:url_request_job_manager.cc(89)] Failed to map: chrome-extension://dliochdbjfkdbacpmhlcpmleaejidimm/cast_sender.js
+[1120/170131:WARNING:extension_protocols.cc(426)] Failed to GetPathForExtension: enhhojjnijigcajfphajepfemndkmdlo
+[1120/170131:WARNING:url_request_job_manager.cc(89)] Failed to map: chrome-extension://enhhojjnijigcajfphajepfemndkmdlo/cast_sender.js
+[1120/170131:WARNING:extension_protocols.cc(426)] Failed to GetPathForExtension: fmfcbgogabcbclcofgocippekhfcmgfj
+[1120/170131:WARNING:url_request_job_manager.cc(89)] Failed to map: chrome-extension://fmfcbgogabcbclcofgocippekhfcmgfj/cast_sender.js
+[1120/170131:WARNING:extension_protocols.cc(426)] Failed to GetPathForExtension: pkedcjkdefgpdelpbcmbmeomcjbeemfm
+[1120/170131:WARNING:url_request_job_manager.cc(89)] Failed to map: chrome-extension://pkedcjkdefgpdelpbcmbmeomcjbeemfm/cast_sender.js
+[1120/170131:WARNING:extension_protocols.cc(426)] Failed to GetPathForExtension: fjhoaacokmgbjemoflkofnenfaiekifl
+[1120/170131:WARNING:url_request_job_manager.cc(89)] Failed to map: chrome-extension://fjhoaacokmgbjemoflkofnenfaiekifl/cast_sender.js
+[1120/170423:WARNING:extension_protocols.cc(426)] Failed to GetPathForExtension: boadgeojelhgndaghljhdicfkmllpafd
+[1120/170423:WARNING:url_request_job_manager.cc(89)] Failed to map: chrome-extension://boadgeojelhgndaghljhdicfkmllpafd/cast_sender.js
+[1120/170423:WARNING:extension_protocols.cc(426)] Failed to GetPathForExtension: dliochdbjfkdbacpmhlcpmleaejidimm
+[1120/170423:WARNING:url_request_job_manager.cc(89)] Failed to map: chrome-extension://dliochdbjfkdbacpmhlcpmleaejidimm/cast_sender.js
+[1120/170423:WARNING:extension_protocols.cc(426)] Failed to GetPathForExtension: enhhojjnijigcajfphajepfemndkmdlo
+[1120/170423:WARNING:url_request_job_manager.cc(89)] Failed to map: chrome-extension://enhhojjnijigcajfphajepfemndkmdlo/cast_sender.js
+[1120/170423:WARNING:extension_protocols.cc(426)] Failed to GetPathForExtension: fmfcbgogabcbclcofgocippekhfcmgfj
+[1120/170423:WARNING:url_request_job_manager.cc(89)] Failed to map: chrome-extension://fmfcbgogabcbclcofgocippekhfcmgfj/cast_sender.js
+[1120/170423:WARNING:extension_protocols.cc(426)] Failed to GetPathForExtension: pkedcjkdefgpdelpbcmbmeomcjbeemfm
+[1120/170423:WARNING:url_request_job_manager.cc(89)] Failed to map: chrome-extension://pkedcjkdefgpdelpbcmbmeomcjbeemfm/cast_sender.js
+[1120/170423:WARNING:extension_protocols.cc(426)] Failed to GetPathForExtension: fjhoaacokmgbjemoflkofnenfaiekifl
+[1120/170423:WARNING:url_request_job_manager.cc(89)] Failed to map: chrome-extension://fjhoaacokmgbjemoflkofnenfaiekifl/cast_sender.js
+[1120/170943:ERROR:ipc_channel_win.cc(502)] pipe error: 232
