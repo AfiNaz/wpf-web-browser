@@ -123,6 +123,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Applets\WebNote.xaml.cs">
+      <DependentUpon>WebNote.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Bookmarks\AddBookmark.xaml.cs">
       <DependentUpon>AddBookmark.xaml</DependentUpon>
     </Compile>
@@ -206,6 +209,10 @@
     <Compile Include="Applets\TabView.xaml.cs">
       <DependentUpon>TabView.xaml</DependentUpon>
     </Compile>
+    <Page Include="Applets\WebNote.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Bookmarks\AddBookmark.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -302,6 +309,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="WebNote\webnote.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Windows\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -312,6 +323,9 @@
     </Compile>
     <Compile Include="Tabs\Tab.xaml.cs">
       <DependentUpon>Tab.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WebNote\webnote.xaml.cs">
+      <DependentUpon>webnote.xaml</DependentUpon>
     </Compile>
     <Compile Include="Windows\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>

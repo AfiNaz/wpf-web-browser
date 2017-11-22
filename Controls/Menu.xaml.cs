@@ -6,6 +6,7 @@ using System.Windows.Forms;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using WebExpress.WebNote;
 using CefSharp;
 using Control = System.Windows.Controls.Control;
 
@@ -30,7 +31,7 @@ namespace WebExpress.Controls
             ScreenButton.Text("Take screenshot");
             DevButton.Text("Developer tools");
             IncognitoButton.Text("Incognito");
-
+            WebNoteButton.Text("Webnote");
             SettingsButton.ImageSource("settings.png");
             HistoryButton.ImageSource("history.png");
             BookmarksButton.ImageSource("bookmarks.png");
@@ -41,6 +42,8 @@ namespace WebExpress.Controls
             ScreenButton.ImageSource("screen.png");
             DevButton.ImageSource("dev.png");
             IncognitoButton.ImageSource("privacy.png");
+            WebNoteButton.ImageSource("window.png");
+            
 
         }
 
@@ -75,10 +78,17 @@ namespace WebExpress.Controls
                 
             }
         }
+        
 
         private void SettingsButton_Click(object sender, MouseButtonEventArgs e)
         {
             ApplicationCommands.New.Execute(new OpenTabCommandParameters(new Settings(), "Settings", "#1abc9c"), this);
+
+            ExecuteStoryBoard();
+        }
+        private void WebNote_Click(object sender, MouseButtonEventArgs e)
+        {
+            ApplicationCommands.New.Execute(new OpenTabCommandParameters(new WebNote.webnote() .ToString(),"WebNote", "#1abc9c"), this);
 
             ExecuteStoryBoard();
         }
@@ -137,6 +147,8 @@ namespace WebExpress.Controls
                 }
             }
         }
+
+     
 
         private void FullscreenButton_OnPreviewMouseUp(object sender, MouseButtonEventArgs e)
         {
