@@ -10,8 +10,11 @@ using KeyEventArgs = System.Windows.Input.KeyEventArgs;
 using UserControl = System.Windows.Controls.UserControl;
 using System.Drawing;
 using System.Net;
+using Spire.Pdf;
+using Spire.Pdf.HtmlConverter;
 using System.Diagnostics;
 using System.Threading;
+using WebExpress.WebNote;
 using System.Windows.Forms;
 using System.Windows.Media;
 using System.Windows.Threading;
@@ -33,7 +36,7 @@ namespace WebExpress
         //Declarations
 
         private bool alreadyFocused;
-        private string urlToLoad;
+        public string urlToLoad;
         private string Title;
         private string LastWebsite;
         private readonly MainWindow mainWindow;
@@ -116,6 +119,8 @@ namespace WebExpress
             RefreshButton.RippleColor(Colors.White);
             BookmarkButton.ImageSource("bookmark_white.png");
             BookmarkButton.RippleColor(Colors.White);
+            WebnoteButton.ImageSource("screen.png");
+            WebnoteButton.RippleColor(Colors.White);
             StopButton = "stop_white.png";
             mainWindow.TabBar.getTabFromForm(this).CloseTab.ImageSource("close_Tab_white.png");
         }
@@ -131,8 +136,11 @@ namespace WebExpress
             Forward.RippleColor(Colors.Black);
             RefreshButton.ImageSource("reload.png");
             RefreshButton.RippleColor(Colors.Black);
+           
             BookmarkButton.ImageSource("bookmark.png");
             BookmarkButton.RippleColor(Colors.Black);
+             WebnoteButton.ImageSource("screen.png");
+            WebnoteButton.RippleColor(Colors.Black);
             StopButton = "stop.png";
             mainWindow.TabBar.getTabFromForm(this).CloseTab.ImageSource("close_Tab.png");
         }
@@ -557,7 +565,29 @@ namespace WebExpress
             addbook.Visibility = Visibility.Visible;
             container.Children.Add(addbook);
         }
-       
+        private void WebnoteButton_Click(object sender, MouseButtonEventArgs e)
+        {
+            ApplicationCommands.New.Execute(new OpenTabCommandParameters(new webnote(), "webnote", "#800080"), this);
+
+            StaticFunctions.AnimateScale(this.ActualWidth, this.ActualHeight, 0, 0, this, 0.2);
+            PdfDocument pdf = new PdfDocument();
+            PdfHtmlLayoutFormat htmlLayoutFormat = new PdfHtmlLayoutFormat();
+            htmlLayoutFormat.IsWaiting = false;
+            PdfPageSettings setting = new PdfPageSettings();
+            setting.Size = PdfPageSize.A4;
+            Dispatcher.Invoke(() =>
+            { pdf.LoadFromHTML(WebView.Address, false, true, true); });
+            //Thread thread = new Thread(() =>
+            //{ pdf.LoadFromHTML(WebView.Address, false, true, true); });
+            //thread.SetApartmentState(ApartmentState.STA);
+            //thread.Start();
+            
+            //thread.Join();
+            pdf.SaveToFile("output.pdf");
+            pdf.Close();
+            System.Diagnostics.Process.Start("output.pdf");
+        }
+
         public async Task ContrastColor(System.Drawing.Color color)
         {
             int d = 0;
@@ -797,6 +827,12 @@ namespace WebExpress
                 StaticFunctions.AnimateHeight(ListContainer.Height, 0, ListContainer, 0.2);
             }
         }
+
+        private void textBox_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
+        {
+
+        }
+
     }
 
 }

@@ -58,13 +58,14 @@
                 <Grid.Effect>
                     <DropShadowEffect ShadowDepth="1.5" Direction="-90" Opacity="0.2"/>
                 </Grid.Effect>
-                <TextBox Padding="10,5,0,0" x:Name="textBox" HorizontalAlignment="Stretch" Margin="153,7,108,7" VerticalAlignment="Stretch" KeyDown="textBox_KeyDown" BorderThickness="0" Background="White"  Height="28" BorderBrush="{x:Null}" GotMouseCapture="textBox_GotMouseCapture"/>
+                <TextBox Padding="10,5,0,0" x:Name="textBox" HorizontalAlignment="Stretch" Margin="145,7,117,7" VerticalAlignment="Stretch" KeyDown="textBox_KeyDown" BorderThickness="0" Background="White"  Height="28" BorderBrush="{x:Null}" GotMouseCapture="textBox_GotMouseCapture" RenderTransformOrigin="0.145,0.536" TextChanged="textBox_TextChanged"/>
             </Grid>
             <Controls:IconButton x:Name="Back" Width="42" Height="42" Background="{x:Null}" BorderBrush="{x:Null}" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,0,0,0" PreviewMouseUp="Back_Click"/>
             <Controls:IconButton x:Name="Forward" Width="42" Height="42" Background="{x:Null}" BorderBrush="{x:Null}" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="52,0,0,0" PreviewMouseUp="Forward_Click"/>
             <Controls:IconButton x:Name="RefreshButton" Width="42" Height="42" Background="{x:Null}" BorderBrush="{x:Null}" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="94,0,0,0" PreviewMouseRightButtonUp="RefreshButton_OnPreviewMouseRightButtonUp" PreviewMouseUp="Refresh_Click" />
             <Controls:IconButton  x:Name="MenuButton" Width="42" Height="42" Background="{x:Null}" BorderBrush="{x:Null}" VerticalAlignment="Stretch" HorizontalAlignment="Right" Margin="0,0,10,0" PreviewMouseUp="MenuButton_Click"/>
             <Controls:IconButton x:Name="BookmarkButton" Width="42" Height="42" Background="{x:Null}" BorderBrush="{x:Null}" VerticalAlignment="Stretch" HorizontalAlignment="Right" Margin="0,0,52,0" PreviewMouseUp="BookmarkButton_Click"  />
+            <Controls:IconButton x:Name="WebnoteButton" Width="42" Height="42" Background="{x:Null}" BorderBrush="{x:Null}" VerticalAlignment="Stretch" HorizontalAlignment="Right" Margin="0,0,83,0" PreviewMouseUp="WebnoteButton_Click"  />
         </Grid>
         <Controls:SnackBar x:Name="SnackBar" Height="42" Width="300" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
 
