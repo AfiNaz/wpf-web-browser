@@ -88,7 +88,7 @@ namespace WebExpress.Controls
         }
         private void WebNote_Click(object sender, MouseButtonEventArgs e)
         {
-            ApplicationCommands.New.Execute(new OpenTabCommandParameters(new WebNote.webnote() .ToString(),"WebNote", "#1abc9c"), this);
+            ApplicationCommands.New.Execute(new OpenTabCommandParameters(new webnote(),"webnote", "#800080"), this);
 
             ExecuteStoryBoard();
         }
@@ -243,6 +243,11 @@ private void GetBitmap(Control pCtrl)
                 TabView tv = mainWindow.TabBar.getSelectedTab().form as TabView;
                 GetBitmap(tv.WebView);
             }
+        }
+
+        private void WebNoteButton_Loaded(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

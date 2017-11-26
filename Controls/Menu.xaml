@@ -51,7 +51,7 @@
             <local:TextIconButton x:Name="DevButton" VerticalAlignment="Top" HorizontalAlignment="Stretch" Height="36" Margin="0,253,0,0" PreviewMouseUp="DevButton_OnPreviewMouseUp" />
             <local:TextIconButton x:Name="ScreenButton" VerticalAlignment="Top" HorizontalAlignment="Stretch" Height="36" Margin="0,289,0,0" PreviewMouseUp="ScreenButton_OnPreviewMouseUp" />
             <local:TextIconButton x:Name="IncognitoButton" VerticalAlignment="Top" HorizontalAlignment="Stretch" Height="36" PreviewMouseUp="IncognitoButton_OnPreviewMouseUp" Margin="0,325,0,0"/>
-            <local:TextIconButton x:Name="WebNoteButton" VerticalAlignment="Top" HorizontalAlignment="Stretch" Height="36" PreviewMouseUp="webnote_click" Margin="0,325,0,0"/>
+            <local:TextIconButton x:Name="WebNoteButton" VerticalAlignment="Top" HorizontalAlignment="Stretch" Height="36" PreviewMouseUp="WebNote_Click" Margin="0,325,0,0" Loaded="WebNoteButton_Loaded"/>
             
         </Grid>
     </Grid>
