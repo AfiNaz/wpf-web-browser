@@ -101,6 +101,18 @@
       <HintPath>..\packages\Newtonsoft.Json.8.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Spire.Doc, Version=6.0.52.4040, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <HintPath>..\packages\Spire.Doc.6.0.52\lib\net40\Spire.Doc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Spire.License, Version=1.3.6.40, Culture=neutral, PublicKeyToken=b1144360237c8b3f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Spire.PDF.3.9.462\lib\net40\Spire.License.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Spire.Pdf, Version=3.9.462.2040, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <HintPath>..\packages\Spire.PDF.3.9.462\lib\net40\Spire.Pdf.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -123,9 +135,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Applets\WebNote.xaml.cs">
-      <DependentUpon>WebNote.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Bookmarks\AddBookmark.xaml.cs">
       <DependentUpon>AddBookmark.xaml</DependentUpon>
     </Compile>
@@ -144,6 +153,7 @@
     <Compile Include="Bookmarks\BookmarksPanel.xaml.cs">
       <DependentUpon>BookmarksPanel.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Classes\Address.cs" />
     <Compile Include="Classes\ControlExtensions.cs" />
     <Compile Include="Classes\JSONClasses.cs" />
     <Compile Include="Classes\RelayCommand.cs" />
@@ -209,10 +219,6 @@
     <Compile Include="Applets\TabView.xaml.cs">
       <DependentUpon>TabView.xaml</DependentUpon>
     </Compile>
-    <Page Include="Applets\WebNote.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Bookmarks\AddBookmark.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
