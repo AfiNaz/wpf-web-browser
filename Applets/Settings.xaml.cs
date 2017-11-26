@@ -18,7 +18,8 @@ namespace WebExpress.Applets
 
         private async void Settings_Loaded(object sender, System.Windows.RoutedEventArgs e)
         {
-            try {
+            try
+            {
                 dynamic dyn = JsonConvert.DeserializeObject(System.IO.File.ReadAllText("settings.json"));
                 comboBox.Text = dyn.SE;
                 textBox.Text = dyn.Start;
@@ -29,7 +30,8 @@ namespace WebExpress.Applets
                 SportCheck.IsChecked = Convert.ToBoolean(Convert.ToString(dyn.Sport));
                 textBox2.Text = dyn.City;
 
-            } catch (Exception ex)
+            }
+            catch (Exception ex)
             {
                 Console.WriteLine("Load settings error: " + ex.Message + " " + ex.Data);
             }
@@ -72,7 +74,7 @@ namespace WebExpress.Applets
 
         private void ClearCookiesBtn_Click(object sender, RoutedEventArgs e)
         {
-            
+
         }
 
         private async void ClearHistoryBtn_Click(object sender, RoutedEventArgs e)
@@ -82,7 +84,7 @@ namespace WebExpress.Applets
                 if (System.IO.File.Exists(StaticDeclarations.Historypath))
                 {
                     System.IO.File.Delete(StaticDeclarations.Historypath);
-                    
+
                 }
             }
             catch (Exception ex)
@@ -90,6 +92,6 @@ namespace WebExpress.Applets
                 Console.WriteLine("Clear history error: " + ex.Message);
             }
         }
-    }
 
+    }
 }
